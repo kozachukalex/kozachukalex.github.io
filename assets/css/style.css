@@ -1,0 +1,81 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+header{
+    background: url(../images/chalkBackground.jpg);
+    padding: 20px 0;
+    
+}
+.header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+h1{
+    color: #fff;
+    font-size: 54px;
+}
+
+.nav-link{
+    font-size: 24px;
+    color: #fff;
+    border-right: 1px #fff solid;
+    line-height: 50%;
+    text-align: center;
+}
+
+img#logo {
+    display: none;
+}
+
+#collapsableBar{
+    display:none;
+}
+
+@media screen and (max-width: 780px){
+
+    .header{
+        justify-content: space-around;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 450px){
+    h1{
+        display: none;
+    }
+    #nonMediaHeader{
+        display: none;
+    }
+    ul.nav{
+        display: none;
+    }
+    #collapsableBar{
+        display:block;
+    }
+    #mediaHeader{
+        background: url(../images/chalkBackground.jpg);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img#logo{
+        display: block;
+        height: 40px;
+        width: 75px;
+    }
+
+}
+
