@@ -5,11 +5,16 @@ html{
     position: relative;
 }
 
+.hideIt {                       /* Used to hide mediaHeader entirely */
+    display: none;
+}
+
 header{
     background: url(../images/chalkBackground.jpg);
     padding: 20px 0;
     
 }
+
 .header{
     display: flex;
     flex-flow: row nowrap;
@@ -30,14 +35,6 @@ h1{
     text-align: center;
 }
 
-img#logo {
-    display: none;
-}
-
-#collapsableBar{
-    display:none;
-}
-
 @media screen and (max-width: 780px){
 
     .header{
@@ -50,6 +47,9 @@ img#logo {
 }
 
 @media screen and (max-width: 450px){
+    .hideIt{
+        display: block;
+    }
     h1{
         display: none;
     }
@@ -59,17 +59,29 @@ img#logo {
     ul.nav{
         display: none;
     }
-    #collapsableBar{
-        display:block;
+    .nav-link{
+        border: none;
+        padding: 10px;
     }
+    #collapsableBar{
+        background: url(../images/chalkBackground.jpg);
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%
+    }
+
+    #mobileLogoArea {
+        width: 55%;
+    }
+
+
     #mediaHeader{
         background: url(../images/chalkBackground.jpg);
         margin: 0;
-        padding: 0;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
+        padding: 0 5%;
+        width: 100%;
     }
     img#logo{
         display: block;
