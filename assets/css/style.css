@@ -82,7 +82,7 @@ footer{
     float: left;
 }
 
-@media screen and (max-width: 780px){
+@media screen and (min-width: 780px){
 
     .header{
         justify-content: space-around;
@@ -95,7 +95,7 @@ footer{
 
 }
 
-@media screen and (max-width: 450px){
+@media screen and (min-width: 450px){
     .hideIt{
         display: block;
     }
