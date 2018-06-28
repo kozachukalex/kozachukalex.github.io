@@ -1,8 +1,14 @@
 html{
+    min-height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     position: relative;
+}
+
+body{
+    
+    background: lightgray;
 }
 
 .hideIt {                       /* Used to hide mediaHeader entirely */
@@ -27,6 +33,31 @@ h1{
     font-size: 54px;
 }
 
+h2{
+    border-bottom: 2px black solid;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 18px;
+}
+
+h4{
+   margin: 10px;
+}
+#push{
+    min-height: 75px;
+}
+footer{
+    background: url(../images/chalkBackground.jpg);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+}
+
 .nav-link{
     font-size: 24px;
     color: #fff;
@@ -35,11 +66,29 @@ h1{
     text-align: center;
 }
 
+.content {
+    margin-top: 50px;
+    padding: 20px 40px;
+    background: #fff;
+    border: 3px #222 solid;
+    font-size: 18px;
+}
+
+#profilePic{
+    width: 220px;
+    border: 3px black solid;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    float: left;
+}
+
 @media screen and (max-width: 780px){
 
     .header{
         justify-content: space-around;
     }
+
+
 
 
 
@@ -64,29 +113,41 @@ h1{
         padding: 10px;
     }
     #collapsableBar{
+        position: absolute;
+        z-index: 1000;
+        right: 0;
         background: url(../images/chalkBackground.jpg);
+        padding: 0;
         display: inline-block;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 40%
+        width: 200px;
     }
-
-    #mobileLogoArea {
-        width: 55%;
-    }
-
-
     #mediaHeader{
         background: url(../images/chalkBackground.jpg);
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin: 0;
-        padding: 0 5%;
         width: 100%;
+        display: flex;
+        justify-content:space-between;
     }
     img#logo{
         display: block;
         height: 40px;
         width: 75px;
+    }
+
+    img#profilePic{
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    #mediaFlex{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
     }
 
 }
