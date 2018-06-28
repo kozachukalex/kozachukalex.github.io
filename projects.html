@@ -44,11 +44,11 @@
         </div>
     </header>
     <div class="hideIt">
-        <section class="d-flex row container" id="mediaHeader">
+        <section class="d-flex container" id="mediaHeader">
             <div>
-                <img src="assets/images/akLogo.png" class = "navbar-brand"  id="logo" alt="Logo">
+                <img src="assets/images/akLogo.png" class="navbar-brand" id="logo" alt="Logo">
             </div>
-            <nav class="navbar navbar-expand-lg navbar-dark" id="collapsableBar" style="background-color: black;">
+            <nav class="navbar navbar-expand-lg navbar-dark container" id="collapsableBar" style="background-color: black;">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -57,14 +57,16 @@
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html"> Home
-                                <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html"> About </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="projects.html"> Projects </a>
+                            <a class="nav-link" href="projects.html"> Projects
+                                <span class="sr-only">(current)</span>
+                            </a>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html"> Contact </a>
@@ -79,8 +81,15 @@
         <div class="card content">
 
             <h2> Projects </h2>
-            <div id = "mediaFlex">
-
+            <div id="mediaFlex d-flex">
+                <div class="row justify-content-center">
+                    <img class="project" src="assets/images/starWars.jpg" alt="starWars">
+                    <img class="project" src="assets/images/caveCrystal.png" alt="caveCrystal">
+                </div>
+                <div class="row justify-content-center">
+                    <img class="project" src="assets/images/fourSeasons.png" alt="fourSeasons">
+                    <img class="project" src="assets/images/crystalBall.png" alt="crystalBall">
+                </div>
             </div>
         </div>
     </div>

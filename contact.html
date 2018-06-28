@@ -44,11 +44,11 @@
         </div>
     </header>
     <div class="hideIt">
-        <section class="d-flex row container" id="mediaHeader">
+        <section class="d-flex container" id="mediaHeader">
             <div>
                 <img src="assets/images/akLogo.png" class="navbar-brand" id="logo" alt="Logo">
             </div>
-            <nav class="navbar navbar-expand-lg navbar-dark" id="collapsableBar" style="background-color: black;">
+            <nav class="navbar navbar-expand-lg navbar-dark container" id="collapsableBar" style="background-color: black;">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -57,7 +57,6 @@
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html"> Home
-                                <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -67,7 +66,10 @@
                             <a class="nav-link" href="projects.html"> Projects </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html"> Contact </a>
+                            <a class="nav-link" href="contact.html"> Contact
+                                <span class="sr-only">(current)</span>
+                            </a>
+
                         </li>
                     </ul>
                 </div>
@@ -78,29 +80,11 @@
     <div class="container">
         <div class="card content">
 
-            <h2> Contact </h2>
+            <h2> About Me </h2>
             <div id="mediaFlex">
-                <form>
-                    <div>
-                        <h4> Name </h4>
-                        <input type="text" name="name" placeholder="Name">
-                    </div>
-                    <div>
-                        <h4> E-mail </h4>
-                        <input type="text" name="email" placeholder="Email">
-                    </div>
-                    <div>
-                        <h4> Message:</h4>
-                        <textarea rows="14" cols="70" maxlength="300" placeholder="Max of 300 characters."></textarea>
-                    </div>
-                    <br>
-                    <button id="submit"> Submit </button>
-                </form>
+
             </div>
-
-
         </div>
-    </div>
     </div>
     <div id="push"></div>
     <footer class="d-flex justify-content-center align-items-center">

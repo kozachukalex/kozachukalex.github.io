@@ -82,6 +82,12 @@ footer{
     float: left;
 }
 
+.project{
+    width: 250px;
+    height: 250px;
+    margin: auto 20px 50px;
+}
+
 @media screen and (max-width: 767px){
     .hideIt{
         display: block;
@@ -98,9 +104,11 @@ footer{
     ul.nav{
         display: none;
     }
+    .nav-item{
+        padding: 10px;
+    }
     .nav-link{
         border: none;
-        padding: 10px;
     }
     #mediaHeader{
         padding-top: 10px;
@@ -115,31 +123,25 @@ footer{
     #collapsableBar{
         position: absolute;
         z-index: 1000;
-        right: 15px;
+        right: 0;
         background: url(../images/chalkBackground.jpg);
         padding: 0;
         display: inline-block;
         display: flex;
-        align-items: center;
         justify-content: space-around;
         width: 30%;
     }
 
-
+    #mediaFlex{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
     img#profilePic{
         float: none;
         width: 204px;
         margin-bottom: 20px;
     }
-
-    div.content{
-        display: flex;
-        flex-flow: column nowrap;
-    }
-
-    ul.navbar-nav{
-        margin: 10px 20px;
-
 
 }
 
