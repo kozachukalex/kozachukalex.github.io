@@ -90,6 +90,7 @@ footer{
 .project{
     width: 250px;
     height: 250px;
+    border: 4px black solid;
 }
 
 .projectName{
