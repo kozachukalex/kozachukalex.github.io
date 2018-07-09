@@ -76,7 +76,7 @@ footer{
 /* About Page Specifically*/
 #profilePic{
     width: 220px;
-    border: 3px black solid;
+    border: 4px black solid;
     margin-right: 30px;
     margin-bottom: 20px;
     float: left;
@@ -90,22 +90,22 @@ footer{
 .project{
     width: 250px;
     height: 250px;
-    border: 4px black solid;
+    border: 3px black solid;
 }
 
-a:hover > .project{
-    border: 4px yellow solid;
+a:hover > .project,
+a:hover > .projectName{
+    border: 3px yellow solid;
 }
 
 .projectName{
     background: url(../images/chalkBackground.jpg);
     position: absolute;
     bottom: 20px;
-    left: 4px;
     height: 50px;
-    width: 242px;
-    border-top: 2px #fff solid;
-    border-bottom: 2px #fff solid;
+    width: 250px;
+    border-top: 3px #fff solid;
+    border-bottom: 3px #fff solid;
     color: #fff;
     line-height: 2.5;
     text-align: center;
@@ -177,8 +177,8 @@ textarea{
         bottom: 20px;
         height: 50px;
         width: 250px;
-        border-top: 2px #fff solid;
-        border-bottom: 2px #fff solid;
+        border-top: 3px #fff solid;
+        border-bottom: 3px #fff solid;
         color: #fff;
         line-height: 2.5;
         text-align: center;
